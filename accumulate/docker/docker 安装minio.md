@@ -1,5 +1,18 @@
+旧版的镜像：
+
+
+```
+docker pull minio/minio:RELEASE.2021-06-17T00-10-46Z
+```
+
+
 ```shell
-docker run -d -p 9000:9000 -p 9090:9090 --name minio --restart=always -e "MINIO_ACCESS_KEY=minioadmin" -e "MINIO_SECRET_KEY=minioadmin" -v D:/docker_repo/minio:/data minio/minio server /data --console-address ":9090" -address ":9000"
+docker run -p 9000:9000 --name minio -d --restart=always \
+  -e "MINIO_ROOT_USER=minio" \
+  -e "MINIO_ROOT_PASSWORD=minio123456" \
+  -v /usr/local/minio/data:/data \
+  -v /usr/local/minio/config:/root/.minio \
+  minio/minio:RELEASE.2021-06-17T00-10-46Z server /data
 ```
 
 页面：[http://localhost:9090/login](http://localhost:9090/login)
