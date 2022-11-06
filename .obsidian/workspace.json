@@ -11,8 +11,12 @@
             "id": "fe1fb4ddb2ece0a2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "accumulate/deploy/Centos7 新服务器基础准备.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "accumulate/deploy/Centos7 新服务器基础准备.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "accumulate/deploy/Centos7 新服务器基础准备.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "accumulate/deploy/Centos7 新服务器基础准备.md"
+              }
             }
           },
           {
@@ -139,15 +147,15 @@
   },
   "active": "fe1fb4ddb2ece0a2",
   "lastOpenFiles": [
+    "accumulate/docker/docker 部署datax-web.md",
+    "accumulate/docker/docker 安装mysql.md",
+    "accumulate/deploy/Centos7 新服务器基础准备.md",
+    "work/0_账号信息.md",
+    "accumulate/deploy/openresty 健康检查.md",
+    "accumulate/deploy/prometheus监控和预警.md",
     "accumulate/docker/docker 部署nginx.md",
     "work/1_开发账号.md",
-    "work/0_账号信息.md",
     "accumulate/docker/docker 安装minio.md",
-    "accumulate/docker/未命名.md",
-    "work/99_培训记录.md",
-    "work/98_服务器信息.md",
-    "accumulate/deploy/openresty 健康检查.md",
-    "accumulate/deploy/Centos7 新服务器基础准备.md",
-    "code/集合处理.md"
+    "accumulate/docker/未命名.md"
   ]
 }

@@ -20,8 +20,6 @@ pgsql更新支持修改基于教程：[https://blog.csdn.net/u013308496/article/
 
 ##### 部署admin
 
---javascripttypescriptbashsqljsonhtmlcssccppjavarubypythongorustmarkdown
-
 ```shell
 docker run -d --name datax-admin --restart=always -p 2020:2020  -v /data/datax-admin.log:/tmp/datax-admin.log hametan/datax-web:2.1.2 java -jar datax-admin-2.1.2.jar --PORT=2020 --MYSQL_SERVICE_HOST=xxxx --MYSQL_SERVICE_PORT=3306 --MYSQL_USER=xxx --MYSQL_PASSWORD=xxx --DB_DATABASE=xxx
 ```

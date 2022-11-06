@@ -182,3 +182,37 @@ sudo systemctl restart docker
 sudo docker info
 ```
 
+![](https://raw.iqiq.io/huicxx/md-pic-bed/main//images/20221104141837.png)
+
+
+
+![](https://raw.iqiq.io/huicxx/md-pic-bed/main//images/20221104141859.png)
+
+9.  添加当前用户到docker用户组，防止permission denied 报错
+
+```
+# 添加当前用户到docker用户组  ${USER}指用户名
+sudo gpasswd -a ${USER} docker
+# 查看用户组下用户，检查添加是否成功
+cat /etc/group | grep docker
+# 重启docker服务
+sudo systemctl restart docker
+# 切换当前会话到新组【group】或重启会话
+newgrp - docker
+```
+10.  设置开机启动
+
+```
+sudo systemctl enable docker
+```
+
+11. 安装docker-compose
+
+```
+# 使用daoCloud 下载docker-compose 文件
+sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+# 下载完成以后 添加可执行命令
+sudo chmod +x /usr/local/bin/docker-compose
+# 验证
+docker-compose --version
+```
