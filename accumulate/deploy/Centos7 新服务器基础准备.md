@@ -131,6 +131,19 @@ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
+或者
+
+```
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
+
+接着更新缓存
+
+```
+ sudo yum makecache fast
+```
+
+
 5.	 查看docker版本，一般使用稳定版
 
 ```
