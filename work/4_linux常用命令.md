@@ -12,6 +12,9 @@ ps -Lf 21496 |wc -l
 
 ## ------------文件大小------------
 du -h --max-depth=1 /home/ljdw/MinIO
+
+du -h --max-depth=1 --exclude="MinIO" /home/ljdw
+
 # 查看文件挂载
 df -h
 # 查看inode占用
