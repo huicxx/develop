@@ -20,7 +20,9 @@ df -h
 # 查看inode占用
 df -ih
 
+rar x XXX.rar 
 
+rar a  
 ## ------------过滤文件内容------------
 grep -A 1000 "[INFO]2022-08-16 00:01:54"
 grep  -A 10 'Ice.TimeoutException' log.log
