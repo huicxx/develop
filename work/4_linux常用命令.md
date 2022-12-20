@@ -55,7 +55,7 @@ systemctl status firewalld
 #添加指定需要开放的端口：
 firewall-cmd --add-port=9998/tcp --permanent
 #重载入添加的端口：
-za36987
+
 #查询指定端口是否开启成功：
 firewall-cmd --query-port=6379/tcp
 
