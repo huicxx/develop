@@ -37,7 +37,11 @@ tail -1000f xxx.log | grep -A 5 [关键字] ----------查看最新的1000行中�
 sed -n '/2022-09-01 15:28/,/2022-09-01 16:00/p' log.log > nohub.out
 
 ## ------------压缩和解压------------
-tar -czf xxx.tar.gz *.jpg
+# tar -czf xxx.tar.gz *.jpg
+
+tar zcvPf WEB-INF.tgz WEB-INF
+
+
 tar -xvf file.tar //解压 tar包
 tar -xzvf file.tar.gz //解压tar.gz
 
