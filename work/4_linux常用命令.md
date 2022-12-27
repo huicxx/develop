@@ -41,6 +41,8 @@ sed -n '/2022-09-01 15:28/,/2022-09-01 16:00/p' log.log > nohub.out
 
 tar zcvPf WEB-INF.tgz WEB-INF
 
+tar zcvPf ROOT_20221227.tgz ROOT
+
 
 tar -xvf file.tar //解压 tar包
 tar -xzvf file.tar.gz //解压tar.gz
